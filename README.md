@@ -42,16 +42,19 @@
 <div align="center">
 
 <a href="https://www.linkedin.com/in/arif-hasan-672249358/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE&labelColor=0A101F" alt="LinkedIn" />
 </a>
+&nbsp;&nbsp;
 <a href="https://github.com/arifhaxn">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=A78BFA&labelColor=0A101F" alt="GitHub" />
 </a>
+&nbsp;&nbsp;
 <a href="https://www.facebook.com/arifhaxnn">
-  <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white" alt="Facebook" />
+  <img src="https://img.shields.io/badge/Facebook-0A101F?style=for-the-badge&logo=facebook&logoColor=22D3EE&labelColor=0A101F" alt="Facebook" />
 </a>
+&nbsp;&nbsp;
 <a href="mailto:arifhasan.connect@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email" />
+  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
 </a>
 
 </div>
