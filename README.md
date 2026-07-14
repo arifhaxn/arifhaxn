@@ -58,7 +58,7 @@
 <a href="mailto:arifhasan.connect@gmail.com">
   <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
 </a>
-
+&nbsp;&nbsp;
 </div>
 
 <!-- ===== END SOCIAL BADGES ===== -->
