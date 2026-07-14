@@ -44,7 +44,7 @@
 <br/>
 
 <a href="https://www.linkedin.com/in/arif-hasan-672249358/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/arifhaxn">
