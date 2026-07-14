@@ -11,15 +11,14 @@
 
 <div align="center">
 
-<!-- Streak (working) -->
+<!-- Streak (separate service, already working) -->
 <img height="180" src="https://streak-stats.demolab.com/?user=arifhaxn&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE" alt="Arif's streak" />
 
 <br/><br/>
 
-<!-- Stats + language breakdown (reliable service) -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arifhaxn&theme=github_dark" alt="Arif's GitHub stats" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arifhaxn&theme=github_dark" alt="Repos per language" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arifhaxn&theme=github_dark" alt="Most committed language" />
+<!-- Stats + Top languages (your self-hosted instance) -->
+<img height="180" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=arifhaxn&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F" alt="Arif's GitHub stats" />
+<img height="180" src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=arifhaxn&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F" alt="Top languages" />
 
 </div>
 
