@@ -38,7 +38,7 @@
 
 <!-- ===== END SNAKE ===== -->
 <!-- ===== SOCIAL BADGES ===== -->
-
+<br/>
 <div align="center">
 
 <a href="https://www.linkedin.com/in/arif-hasan-672249358/">
