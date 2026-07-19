@@ -19,7 +19,7 @@
     "logo": "chessy.png",
     "description": "Chess timer app for all types of variations",
     "tags": ["Flutter", "Dart"]
-  }
+  },
   {
     "name": "Claster",
     "repo": "arifhaxn/Claster",
