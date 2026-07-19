@@ -173,19 +173,20 @@ def card(p, x, y, idx):
     # language donut, animated draw-in
     langs = p.get("languages") or {}
     if langs:
-        cx, cy, r = CARD_W - 60, 82, 24
+        cx, cy, r = CARD_W - 52, 82, 23
         segs, legend = donut_segments(langs, cx, cy, r, b + 0.3)
         a(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="rgba(148,163,184,0.15)" stroke-width="8"/>')
         a(segs)
         top = legend[0]
         a(f'<text x="{cx}" y="{cy+3}" text-anchor="middle" font-size="9" fill="{TEXT}">{top[1]*100:.0f}%</text>')
-        # legend: right-aligned column to the LEFT of the donut, clear of the ring
-        legend_right = cx - r - 12
+        # legend: right-aligned text ends well clear of the ring; dot sits LEFT of the text
+        text_right = cx - r - 16
         ly = cy - 18
         for lang, frac, col in legend[:3]:
             label = f'{esc(lang)} {frac*100:.0f}%'
-            a(f'<text x="{legend_right}" y="{ly+3}" text-anchor="end" font-size="8.5" fill="{MUTED}">{label}</text>')
-            a(f'<circle cx="{legend_right + 7}" cy="{ly}" r="3" fill="{col}"/>')
+            a(f'<text x="{text_right}" y="{ly+3}" text-anchor="end" font-size="8.5" fill="{MUTED}">{label}</text>')
+            dot_x = text_right - len(f"{lang} {frac*100:.0f}%") * 4.6 - 7
+            a(f'<circle cx="{dot_x:.0f}" cy="{ly}" r="3" fill="{col}"/>')
             ly += 15
     a('</g>')
     a('</a>')
