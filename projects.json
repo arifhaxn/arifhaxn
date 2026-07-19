@@ -9,7 +9,7 @@
   {
     "name": "Chessy",
     "repo": "arifhaxn/chessy",
-    "logo": "logo.png",
+    "logo": "chessy.png",
     "description": "Chess timer app",
     "tags": ["Flutter", "Dart"]
   }
