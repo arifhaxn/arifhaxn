@@ -7,3 +7,13 @@
     "tags": ["Flutter", "Dart", "NextJS"]
   }
 ]
+[
+  {
+    "name": "Chessy",
+    "repo": "arifhaxn/chessy",
+    "logo": "logo.png",
+    "description": "Chess timer app",
+    "tags": ["Flutter", "Dart"]
+  }
+]
+
