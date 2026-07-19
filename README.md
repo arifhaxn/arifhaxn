@@ -37,7 +37,7 @@
 </div>
 
 <!-- ===== END SNAKE ===== -->
-
+<br/>
 <div align="center">
 <img width="100%" src="https://raw.githubusercontent.com/arifhaxn/arifhaxn/projects/projects.svg" alt="Projects" />
 </div>
