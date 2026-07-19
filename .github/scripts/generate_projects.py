@@ -118,7 +118,9 @@ def card(p, x, y, idx):
     a(f'<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="{b:.2f}s" fill="freeze"/>')
 
     # card shell — mini terminal
-    a(f'<rect width="{CARD_W}" height="{CARD_H}" rx="12" fill="{PANEL}" stroke="rgba(34,211,238,0.28)"/>')
+    a(f'<rect width="{CARD_W}" height="{CARD_H}" rx="12" fill="{PANEL}" stroke="rgba(34,211,238,0.28)">'
+      f'<animate attributeName="stroke" values="rgba(34,211,238,0.22);rgba(34,211,238,0.5);rgba(34,211,238,0.22)" '
+      f'dur="4.5s" begin="{b+idx*0.7:.2f}s" repeatCount="indefinite"/></rect>')
     a(f'<rect width="{CARD_W}" height="30" rx="12" fill="#0B1222"/>')
     a(f'<rect y="18" width="{CARD_W}" height="12" fill="#0B1222"/>')
     a(f'<line x1="0" y1="30" x2="{CARD_W}" y2="30" stroke="rgba(255,255,255,0.08)"/>')
@@ -137,14 +139,18 @@ def card(p, x, y, idx):
     else:
         a(f'<circle cx="{CARD_W-16}" cy="15" r="3.5" fill="{DIM}"/>')
 
-    # logo (base64) or fallback monogram
+    # logo (base64) or fallback monogram — with a gentle vertical float
     logo = p.get("_logo_b64")
+    float_anim = (f'<animateTransform attributeName="transform" type="translate" '
+                  f'values="0 0; 0 -2.5; 0 0" dur="5s" begin="{b+idx*0.5:.2f}s" '
+                  f'repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" '
+                  f'keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>')
     if logo:
-        a(f'<image x="16" y="44" width="40" height="40" href="{logo}" preserveAspectRatio="xMidYMid meet"/>')
+        a(f'<g>{float_anim}<image x="16" y="44" width="40" height="40" href="{logo}" preserveAspectRatio="xMidYMid meet"/></g>')
     else:
-        a(f'<rect x="16" y="44" width="40" height="40" rx="9" fill="{VIOLET2}" opacity="0.9"/>')
         initial = esc((p.get("name") or "?")[0].upper())
-        a(f'<text x="36" y="71" text-anchor="middle" font-size="20" font-weight="700" fill="#EDE9FE">{initial}</text>')
+        a(f'<g>{float_anim}<rect x="16" y="44" width="40" height="40" rx="9" fill="{VIOLET2}" opacity="0.9"/>'
+          f'<text x="36" y="71" text-anchor="middle" font-size="20" font-weight="700" fill="#EDE9FE">{initial}</text></g>')
 
     # name + blinking cursor
     name = esc(p.get("name", "unnamed"))
