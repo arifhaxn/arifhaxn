@@ -148,7 +148,7 @@ def card(p, x, y, idx):
 
     # name + blinking cursor
     name = esc(p.get("name", "unnamed"))
-    a(f'<text x="68" y="60" font-size="15" font-weight="700" fill="{TEXT}">{name}'
+    a(f'<text x="68" y="61" font-size="17" font-weight="700" fill="{TEXT}">{name}'
       f'<tspan fill="{CYAN}">_<animate attributeName="opacity" values="1;0;1" dur="1.2s" '
       f'begin="{b+0.4:.2f}s" repeatCount="indefinite"/></tspan></text>')
 
@@ -170,24 +170,23 @@ def card(p, x, y, idx):
       f'<tspan fill="{CYAN}">&#9733;</tspan> {stars}'
       f'<tspan fill="{DIM}" dx="14">updated {rel_time(p.get("pushed_at"))}</tspan></text>')
 
-    # language donut, animated draw-in
+    # language donut, animated draw-in — vertically centered in the card body
     langs = p.get("languages") or {}
     if langs:
-        cx, cy, r = CARD_W - 52, 82, 23
+        cx, cy, r = CARD_W - 58, CARD_H // 2 + 6, 27
         segs, legend = donut_segments(langs, cx, cy, r, b + 0.3)
-        a(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="rgba(148,163,184,0.15)" stroke-width="8"/>')
+        a(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="rgba(148,163,184,0.15)" stroke-width="9"/>')
         a(segs)
         top = legend[0]
-        a(f'<text x="{cx}" y="{cy+3}" text-anchor="middle" font-size="9" fill="{TEXT}">{top[1]*100:.0f}%</text>')
-        # legend: right-aligned text ends well clear of the ring; dot sits LEFT of the text
-        text_right = cx - r - 16
-        ly = cy - 18
+        a(f'<text x="{cx}" y="{cy+4}" text-anchor="middle" font-size="11" font-weight="700" fill="{TEXT}">{top[1]*100:.0f}%</text>')
+        # legend: fixed left column, dot then left-aligned text; ends well before the ring
+        dot_x = cx - r - 92
+        text_x = dot_x + 9
+        ly = cy - 22
         for lang, frac, col in legend[:3]:
-            label = f'{esc(lang)} {frac*100:.0f}%'
-            a(f'<text x="{text_right}" y="{ly+3}" text-anchor="end" font-size="8.5" fill="{MUTED}">{label}</text>')
-            dot_x = text_right - len(f"{lang} {frac*100:.0f}%") * 4.6 - 7
-            a(f'<circle cx="{dot_x:.0f}" cy="{ly}" r="3" fill="{col}"/>')
-            ly += 15
+            a(f'<circle cx="{dot_x}" cy="{ly}" r="3.5" fill="{col}"/>')
+            a(f'<text x="{text_x}" y="{ly+4}" font-size="10" fill="{MUTED}">{esc(lang)} {frac*100:.0f}%</text>')
+            ly += 18
     a('</g>')
     a('</a>')
     return "".join(e)
