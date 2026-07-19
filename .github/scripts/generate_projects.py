@@ -108,6 +108,12 @@ def card(p, x, y, idx):
     b = 0.25 + idx * 0.15          # staggered entrance
     e = []
     a = e.append
+    # normalize repo: accept "owner/repo" OR a full github URL
+    repo = p.get("repo", "").strip()
+    repo = repo.replace("https://github.com/", "").replace("http://github.com/", "")
+    repo = repo.rstrip("/")
+    href = f"https://github.com/{esc(repo)}"
+    a(f'<a href="{href}" target="_blank">')
     a(f'<g opacity="0" transform="translate({x},{y})">')
     a(f'<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="{b:.2f}s" fill="freeze"/>')
 
@@ -116,7 +122,6 @@ def card(p, x, y, idx):
     a(f'<rect width="{CARD_W}" height="30" rx="12" fill="#0B1222"/>')
     a(f'<rect y="18" width="{CARD_W}" height="12" fill="#0B1222"/>')
     a(f'<line x1="0" y1="30" x2="{CARD_W}" y2="30" stroke="rgba(255,255,255,0.08)"/>')
-    repo = p.get("repo", "")
     a(f'<text x="16" y="19" font-size="10" fill="{MUTED}"><tspan fill="{CYAN}">&#8226;</tspan> {esc(repo)}</text>')
 
     # activity dot: emerald pulse if pushed within 14 days, dim otherwise
@@ -183,6 +188,7 @@ def card(p, x, y, idx):
             a(f'<circle cx="{legend_right + 7}" cy="{ly}" r="3" fill="{col}"/>')
             ly += 15
     a('</g>')
+    a('</a>')
     return "".join(e)
 
 def build(projects):
