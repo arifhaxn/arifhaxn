@@ -17,8 +17,15 @@
     "name": "Chessy",
     "repo": "arifhaxn/chessy",
     "logo": "chessy.png",
-    "description": "Chess timer app",
+    "description": "Chess timer app for all types of variations",
     "tags": ["Flutter", "Dart"]
+  }
+  {
+    "name": "Claster",
+    "repo": "arifhaxn/Claster",
+    "logo": "chessy.png",
+    "description": "A class scheduling app for teachers which is used to track routines",
+    "tags": ["Flutter", "Dart", "Firebase"]
   }
 ]
 
