@@ -33,6 +33,13 @@
     "logo": "onetele.png",
     "description": "A custom teleprompter for liilab's recording studio",
     "tags": ["Flutter", "Dart"]
+  },
+  {
+    "name": "Career Logic AI",
+    "repo": "arifhaxn/CareerLogic-AI",
+    "logo": "onetele.png",
+    "description": "An AI Powered CV management and assesment system for aspiring career builders",
+    "tags": ["Flutter", "Dart", "Groq"]
   }
 ]
 
