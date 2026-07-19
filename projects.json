@@ -7,17 +7,17 @@
     "tags": ["Flutter", "Dart", "NextJS"]
   },
   {
+    "name": "OnePick",
+    "repo": "arifhaxn/one_pick",
+    "logo": "op.png",
+    "description": "An One Piece trivia app to find your character",
+    "tags": ["Flutter", "Dart"]
+  },
+  {
     "name": "Chessy",
     "repo": "arifhaxn/chessy",
     "logo": "chessy.png",
     "description": "Chess timer app",
-    "tags": ["Flutter", "Dart"]
-  },
-  {
-    "name": "OnePick",
-    "repo": "arifhaxn/chessy",
-    "logo": "chessy.png",
-    "description": "An One Piece trivia app to find your character",
     "tags": ["Flutter", "Dart"]
   }
 ]
