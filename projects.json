@@ -26,6 +26,13 @@
     "logo": "claster.png",
     "description": "A class scheduling app for teachers which is used to track routines",
     "tags": ["Flutter", "Dart", "Firebase"]
+  },
+  {
+    "name": "OneTELE",
+    "repo": "arifhaxn/OneTELE---Liilab-Teleprompter",
+    "logo": "claster.png",
+    "description": "A custom teleprompter for liilab's recording studio",
+    "tags": ["Flutter", "Dart"]
   }
 ]
 
