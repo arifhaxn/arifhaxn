@@ -24,7 +24,9 @@ def main():
     with open("projects.json") as f:
         projects = json.load(f)
     for p in projects:
-        repo = p.get("repo", "")
+        repo = p.get("repo", "").strip()
+        repo = repo.replace("https://github.com/", "").replace("http://github.com/", "").rstrip("/")
+        p["repo"] = repo
         try:
             info = gh(f"https://api.github.com/repos/{repo}")
             p["stars"] = info.get("stargazers_count", 0)
