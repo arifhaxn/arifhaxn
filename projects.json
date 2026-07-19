@@ -23,7 +23,7 @@
   {
     "name": "Claster",
     "repo": "arifhaxn/Claster",
-    "logo": "chessy.png",
+    "logo": "claster.png",
     "description": "A class scheduling app for teachers which is used to track routines",
     "tags": ["Flutter", "Dart", "Firebase"]
   }
