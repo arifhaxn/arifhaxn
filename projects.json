@@ -37,7 +37,7 @@
   {
     "name": "Career Logic AI",
     "repo": "arifhaxn/CareerLogic-AI",
-    "logo": "onetele.png",
+    "logo": "cl.png",
     "description": "An AI Powered CV management and assesment system for aspiring career builders",
     "tags": ["Flutter", "Dart", "Groq"]
   }
