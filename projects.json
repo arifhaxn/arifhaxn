@@ -1,7 +1,9 @@
-{
-  "name": "LeadUnity",
-  "repo": "arifhaxn/lead_unity",
-  "logo": "logo.png",
-  "description": "Leading University's defense setup",
-  "tags": ["Flutter", "Dart", "NextJS"]
-}
+[
+  {
+    "name": "LeadUnity",
+    "repo": "arifhaxn/lead_unity",
+    "logo": "logo.png",
+    "description": "Leading University's defense setup",
+    "tags": ["Flutter", "Dart", "NextJS"]
+  }
+]
