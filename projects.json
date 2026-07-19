@@ -1,8 +1,8 @@
 [
   {
-    "name": "My Project",
-    "repo": "arifhaxn/your-actual-repo-name",
-    "description": "One line about what it does.",
-    "tags": ["Flutter", "Dart"]
+    "name": "LeadUnity",
+    "repo": "https://github.com/arifhaxn/lead_unity",
+    "description": "Leading University's defense setup",
+    "tags": ["Flutter", "Dart", "NextJS", "MongoDB"]
   }
 ]
