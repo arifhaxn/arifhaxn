@@ -30,7 +30,7 @@
   {
     "name": "OneTELE",
     "repo": "arifhaxn/OneTELE---Liilab-Teleprompter",
-    "logo": "claster.png",
+    "logo": "onetele.png",
     "description": "A custom teleprompter for liilab's recording studio",
     "tags": ["Flutter", "Dart"]
   }
