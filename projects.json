@@ -1,7 +1,7 @@
 [
   {
     "name": "LeadUnity",
-    "repo": "https://github.com/arifhaxn/lead_unity",
+    "repo": "arifhaxn/lead_unity",
     "description": "Leading University's defense setup",
     "tags": ["Flutter", "Dart", "NextJS", "MongoDB"]
   }
