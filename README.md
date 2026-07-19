@@ -37,6 +37,11 @@
 </div>
 
 <!-- ===== END SNAKE ===== -->
+
+<div align="center">
+<img width="100%" src="https://raw.githubusercontent.com/arifhaxn/arifhaxn/projects/projects.svg" alt="Projects" />
+</div>
+
 <!-- ===== SOCIAL BADGES ===== -->
 <br/>
 <div align="center">
