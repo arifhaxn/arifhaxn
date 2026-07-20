@@ -30,7 +30,7 @@ jobs:
       - name: Generate projects.svg
         run: |
           mkdir -p out
-          python3 .github/scripts/generate_projects.py merged.json out/projects.svg
+          python3 .github/scripts/generate_projects.py merged.json out
 
       - name: Push to projects branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
