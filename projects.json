@@ -16,7 +16,7 @@
   {
     "name": "Chessy",
     "repo": "arifhaxn/chessy",
-    "logo": "chessy.png",
+    "logo": "chess.png",
     "description": "Chess timer app for all types of variations",
     "tags": ["Flutter", "Dart"]
   },
