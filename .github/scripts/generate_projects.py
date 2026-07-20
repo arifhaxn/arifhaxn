@@ -211,7 +211,6 @@ def build(projects):
       '</linearGradient></defs>')
     # header: matches SYSTEM.INFO styling
     a(f'<text x="{MARGIN+2}" y="18" font-size="16" letter-spacing="2" fill="{CYAN}">PROJECTS.LIST</text>')
-    a(f'<text x="{MARGIN+130}" y="18" font-size="10" fill="{DIM}">./projects.sh --all</text>')
     a(f'<line x1="{MARGIN}" y1="28" x2="{W-MARGIN}" y2="28" stroke="url(#acc)" stroke-width="1.5" opacity="0.7"/>')
     for i, p in enumerate(projects):
         x = MARGIN + (i % 2) * (CARD_W + GAP + 4)
